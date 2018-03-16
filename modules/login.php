@@ -41,7 +41,7 @@ if (isset($_POST['login'])) {
 }
 ?>
 <!-- <h2>Podaj dane logowania</h2> -->
-
+<div class="login">
 <form method="post">
 	<div class="svgContainer">
 		<div>
@@ -153,6 +153,7 @@ if (isset($_POST['login'])) {
 		<button id="login">Log in</button>
 	</div>
 </form>
+</div>
 <!-- <form method="post">
 	<div class="form-group">
 		<input placeholder="login" name="login" type="text" class="form-control">

@@ -64,19 +64,17 @@ if (isset($_GET['art_id'])) {
 
 <?php
 
-if(isset($_POST['comment'])){
+if (isset($_POST['comment'])) {
 
-    if(isset($_SESSION['id'])){
+    if (isset($_SESSION['id'])) {
         $user = $_SESSION['id'];
-    }  else{
+    } else {
             $user = '1';
-        }
-   
-   $result = $pdo->prepare('INSERT INTO `comments` (`id`, `content`, `user_id`, `article_id`, `created_at`) VALUES (NULL, :comment, :user_id, :article_id, CURRENT_TIMESTAMP)');
-   $result->bindParam(':comment', $_POST['comment']);
-   $result->bindParam(':user_id', $user);
-   $result->bindParam(':article_id', $_GET['art_id']);
-   $result->execute();
-   header("Refresh:0");
-  
+            }
+    $result = $pdo->prepare('INSERT INTO `comments` (`content`, `user_id`, `article_id`, `created_at`) VALUES (:comment, :user_id, :article_id, CURRENT_TIMESTAMP)');
+    $result->bindParam(':comment', $_POST['comment']);
+    $result->bindParam(':user_id', $user);
+    $result->bindParam(':article_id', $_GET['art_id']);
+    $result->execute();
+    header("Refresh:0");
 }
