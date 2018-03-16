@@ -1,0 +1,151 @@
+.main-container{
+    padding: 30px;
+    font-family: 'Rammetto One', cursive;
+}
+.header{
+    background-color: yellow;
+    width:100%;
+    height:200px;
+    background-image: url(http://grafarma.pl/wp-content/uploads/2017/05/animalsy-pl3.jpg);
+    background-repeat: no-repeat;
+}
+.header h1{
+    padding-top:50px;
+    text-shadow: 6px 9px 12px rgba(0, 0, 0, 0.8);
+	color: #0080ff;
+    font-size: 80px;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+.container{
+    display:flex;
+}
+.content{
+    background-color: green;
+    width:80%;
+    height:auto;
+    padding: 20px;
+
+}
+.sidebar{
+    background-color: red;
+    width:20%;
+    height:auto;
+}
+.bold{
+    font-weight: bold;
+    font-size:30px;
+    background-color: rgb(255, 72, 0);
+}
+.normal a{
+    font-size:25px;
+}
+.title{
+    color: white;
+    font-size:35px;
+}
+.autor{
+    color: red;
+    font-size:35px;
+}
+.content{
+    color: rgb(3, 9, 65);
+    font-size:35px;
+}
+.user{
+    color: rgba(0, 255, 21, 0.801);
+    font-size:15px;
+}
+.comment{
+    color: rgb(14, 216, 223);
+    font-size:25px;
+}
+img{
+    max-width: 300px;
+}
+
+.left {
+    width: 920px !important;
+    padding-bottom: 40px;
+    min-height: auto !important;
+    padding-right: 0;
+    float: left;
+}
+
+.left > p:first-of-type { 
+    background: #ffd987; 
+    font-style: italic; 
+    padding: 5px 10px; 
+    margin-bottom: 40px;
+}
+
+.tip {
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 1.2em;
+    position: relative;
+    width: 200px;
+}
+
+.tip:before {
+    position: absolute;
+    top: -14px;
+    left: 98px;
+    display: inline-block;
+    border-right: 14px solid transparent;
+    border-bottom: 14px solid #fff;
+    border-left: 14px solid transparent;
+    border-bottom-color: rgba(0, 0, 0, 0.2);
+    content: '';
+}
+
+.tip:after {
+    position: absolute;
+    top: -12px;
+    left: 99px;
+    display: inline-block;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid #fff;
+    border-left: 12px solid transparent;
+    content: '';
+}
+
+.tip.left:before {
+    border-top: 14px solid transparent;
+    border-right: 14px solid #fff;
+    border-bottom: 14px solid transparent;
+    border-right-color: rgba(0, 0, 0, 0.2);
+    left: -28px;
+    top: 20px;
+}
+
+.tip.left:after {
+    border-top: 12px solid transparent;
+    border-right: 12px solid #fff;
+    border-bottom: 12px solid transparent;
+    left: -24px;
+    top: 22px;
+}
+.form-control{
+    width: 400px;
+    height: 50px;
+}
+.frame{
+    border: 5px solid #ffffff;
+}
+.time{
+    color: rgb(14, 27, 207);
+    font-size: 12px;
+}
+.name{
+    color: black;
+    display: inline;
+    font-size: 18px;
+}
+.comm{
+    color: red;
+    display: inline;
+    font-size: 12px;
+}
