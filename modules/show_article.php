@@ -48,7 +48,6 @@ if (isset($_GET['art_id'])) {
         echo '<div class="comment"><div class="comm">Treść iście zacnego komentarza:</div><br/>'. $comment['content'] . '</div>';
         echo '</div></div>';
     }
-    
 }
 ?>
 <br/><br/><br/><br/><br/><br/>
