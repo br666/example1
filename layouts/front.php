@@ -12,12 +12,24 @@
 
 <body>
     <div class="main-container">
-   <?php if(isset($_SESSION['id'])){
+    <?php
+    /**
+    * Index
+    *
+    *PHP Version 7.2.2
+    *
+    * @category CL_PHP_001
+    * @package  Index
+    * @author   Display Name <br666@o2.pl>
+    * @license  http://www.gnu.org/copyleft/gpl.html GNU General Public License
+    * @link     http://local.test.pl/cl_php_001/
+    */
+    if (isset($_SESSION['id'])) {
         echo '<a class="nav-link" href="index.php?v=logout">Wyloguj: <b>('.$_SESSION['login'].' )</b></a>';
-    }  else{
+    } else {
         echo '<a class="nav-link" href="index.php?v=login">Logowanie</a>';
-        }
-?>
+    }
+    ?>
         <div class="header"><h1>Super strona</h1></div>
         <div class="container">
             <div class="content">
@@ -40,7 +52,7 @@
                     <li class="<?php echo $bold;?>">
                         <a   href="index.php?v=front_page&id=<?php echo $category['id'];?>"><?php echo $category['name'];?></a>
                     </li>
-            <?php } ?>
+                <?php } ?>
                 </ul>
             </div>
         </div>

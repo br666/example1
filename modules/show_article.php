@@ -54,7 +54,7 @@ if (isset($_GET['art_id'])) {
 <div>Dodaj komentarz</div>
 <form method="post">
 
-   <div class="form-gruop">
+   <div class="form-group">
        <textarea class="form-control" name="comment" placeholder="Treść komentarza"></textarea>
    </div>
    <div class="form-group">
@@ -70,7 +70,7 @@ if (isset($_POST['comment'])) {
         $user = $_SESSION['id'];
     } else {
             $user = '1';
-            }
+    }
     $result = $pdo->prepare('INSERT INTO `comments` (`content`, `user_id`, `article_id`, `created_at`) VALUES (:comment, :user_id, :article_id, CURRENT_TIMESTAMP)');
     $result->bindParam(':comment', $_POST['comment']);
     $result->bindParam(':user_id', $user);

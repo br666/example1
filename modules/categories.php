@@ -22,7 +22,7 @@ $from = $page * $limit;
 $count = $pdo->query('SELECT COUNT(id) as cnt FROM categories')->fetch()['cnt'];
 $allPages = ceil($count / $limit);
 if ($page > $allPages-1) {
-    header('location: index.php?v=categories&page='. $allPages );
+    header('location: index.php?v=categories&page='.$allPages);
 }
 $sql = 'SELECT * FROM categories ORDER BY id ASC LIMIT ' . $from . ', '. $limit;
 $result = $pdo->query($sql);
